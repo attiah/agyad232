@@ -1,0 +1,293 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>AGYADTECH</title>
+    <!-- Include meta tag to ensure proper rendering and touch zooming -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="jquery-1.9.1.min.js" type="text/javascript"></script>
+    <link href="jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css" />
+    <script src="jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
+    <script src="cordova.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="themes/CARSPARE.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <script src="index.js" type="text/javascript"></script>
+    
+    
+</head>
+<body>
+<!--      Home  -->
+<div data-role="page" id="home" data-theme="a">
+ <div data-role="header" data-position="fixed" >
+        <h2> AGYADTECH </h2>
+  </div>
+  <div data-role="main" class="ui-content" >
+
+   <fieldset class="ui-grid-b" style="text-align:center;">
+
+
+                <div class="ui-block-a">
+
+                    <a href="javascript:aboutMenu()"> <img alt="" src="Images/about.png" style="width: 40px; height: 40px" /></a>
+                    <a href="javascript:aboutMenu()" style="Color:White; text-decoration:none;"><h4>About</h4> </a>
+                </div>
+                <div class="ui-block-b">
+
+                    <a href="javascript:ContactnMenu()"> <img alt="" src="Images/contact.png" style="width: 40px; height: 40px" /></a>
+                    <a href="javascript:ContactnMenu()" style="Color:White; text-decoration:none;"><h4>Contact</h4> </a>
+                </div>
+                <div class="ui-block-c">
+
+                    <a href="javascript:NoteMenu()"> <img alt="" src="Images/send.png" style="width: 40px; height: 40px" /></a>
+                    <a href="javascript:NoteMenu()" style="Color:White; text-decoration:none;"><h4>Agayd in word</h4> </a>
+                </div>
+                <div class="ui-block-a">
+                <a href="javascript:loginMenu()"> <img alt="" src="Images/login.png"  style="width: 40px; height: 40px" /></a>
+                <a href="javascript:loginMenu()" style="Color:White; text-decoration:none;">    <h4 style="">Login</h4></a>
+               </div>
+             
+                <div class="ui-block-b">
+                <a href="javascript:RegisterMenu()"> <img alt="" src="Images/register.png" style="width: 40px; height: 40px" /></a>
+                <a href="javascript:RegisterMenu()" style="Color:White; text-decoration:none;">    <h4 style="">Register </h4></a>
+               </div>
+             
+                <div class="ui-block-c">
+                <a href="javascript:projectMenu()"> <img alt="" src="Images/project.png" style="width: 40px; height: 40px" /></a>
+                <a href="javascript:projectMenu()" style="Color:White; text-decoration:none;">    <h4 style="">My Project</h4></a>
+               </div>
+             
+             
+
+            </fieldset>
+  </div>
+  <div data-role="footer" data-position="fixed" >
+     <h6 style="text-align:center;">All Right Reserved @2016</h6>
+  </div>
+</div>
+
+
+
+
+
+<!--      About  -->
+
+<div data-role="page" id="about" data-theme="a">
+ <div data-role="header" data-position="fixed" data-theme="a">
+ 
+     <a href="javascript:home()" data-rel="popup" class="ui-btn ui-btn-left  ui-icon-grid  ui-btn-icon-notext" ></a>
+        <h2> AGYADTECH </h2>
+  </div>
+  <div data-role="content" class="ui-content">
+    <h2 style ="text-align:center ;"> About  US </h2>
+      <img src="Images/1.jpg"  width="100%" />
+    <h3>  AGYADTECH Company - Management message</h3>
+<h4>AGYADTECH for Elevator and Escalator CONTRACTORS is prepared to provide our.</h4>
+<h4>Customers the world class service in the AGYADTECH for Elevator and Escalator technology. Our talented engineers and experienced staffs are able to fulfill your AGYADTECH for Elevator and Escalator project needs. Our continued process of improving customer service quality by fulfilling the stringent requirements set forth by the global stan- dards with sophisticated modern technology has given us a separate identity among Elevator and Escalator project contractors. We heartily welcome you to share our abundant experience in the Elevator and Escalator industry for the two years. We have already completed more than One hundred big projects and small projects of more than Two hundred. We are always prepared to serve you and we will be highly honored if you provide us the occasion to render our service </h4>
+
+  <div data-role="footer" data-position="fixed" data-theme="a">
+  <h6 style="text-align:center;">All Right Reserved @2016</h6>
+  </div>
+</div>
+
+</div>
+
+
+
+
+<!--      contactus  -->
+
+<div data-role="page" id="contact" data-theme="a">
+ <div data-role="header" data-position="fixed" data-theme="a">
+     <a href="javascript:home()" data-rel="popup" class="ui-btn ui-btn-left  ui-icon-grid ui-btn-icon-left ui-btn-icon-notext" ></a>
+        <h2> AGYADTECH </h2>
+  </div>
+  <div data-role="content" class="ui-content">
+      <!-- Main Content -->
+                           
+                                <h2>Contact Form</h2>
+                            
+                            <p>AGYADTECH is about striving to achieve a reputation as leaders in our area of expertise complementing the
+company ethos of Leaders in People Comfort. Put simply, we wish to be known as a group of people that are persistent and determined to be reliable and do good work
+.</p>
+                            <br>
+                            <!-- Contact Form -->
+                           
+                                <label>Name</label>
+                                 <input id="author" class="form-control" type="text">
+                                 
+                                <label>Email
+                                 <span class="color-red">*</span>
+                                </label>
+                                 <input id="email" class="form-control" type="text">
+                                  
+                                <label>Message</label>
+                                 <textarea id="text" rows="8" class="form-control"></textarea>
+                                <a href="javascript:send()"  class="ui-btn ui-corner-all"  >Login</a>
+                               
+  <div data-role="footer" data-position="fixed" data-theme="a">
+  <h6 style="text-align:center;">All Right Reserved @2016</h6>
+  </div>
+</div>
+
+</div>
+
+
+
+<!--      customer regsiter  -->
+
+<div data-role="page" id="registerpage" data-theme="a">
+ <div data-role="header" data-position="fixed" data-theme="a">
+    <a href="javascript:home()" data-rel="popup" class="ui-btn ui-btn-left  ui-icon-grid ui-btn-icon-left ui-btn-icon-notext" ></a>
+        <h2> AGYADTECH </h2>
+  </div>
+  <div data-role="content" class="ui-content">
+    <h2 style ="text-align:center ;"> Register</h2>
+   <label for="id">Customer ID</label>
+    <input type="text" name="userid" id="Text1" maxlength="50" readonly ="true">
+   <label for="name">Customer Name</label>
+    <input type="text" name="username" id="name"  maxlength="50">
+   <label for="phone">Phone</label>
+    <input type="text" name="phone" id="phone" maxlength="10">
+   <label for="email">Email</label>
+    <input type="text" name="email" id="Text2"  maxlength="50">
+  <label for="password">password</label>
+    <input type="password" name="password" id="password"  maxlength="10">
+ <a href="javascript:rgisterCustomer()"   class="ui-btn ui-corner-all"  >Send</a>
+  
+  
+  <div data-role="footer" data-position="fixed" data-theme="a">
+  <h6 style="text-align:center;">All Right Reserved @2016</h6>
+  </div>
+</div>
+
+</div>
+
+<!--      Note  -->
+
+<div data-role="page" id="notepage" data-theme="a">
+ <div data-role="header" data-position="fixed" data-theme="a">
+ 
+     <a href="javascript:home()" data-rel="popup" class="ui-btn ui-btn-left  ui-icon-grid  ui-btn-icon-notext" ></a>
+        <h2> AGYADTECH </h2>
+  </div>
+  <div data-role="content" class="ui-content">
+    <h2 style ="text-align:center ;"> AGYADTECH Company</h2>
+      <img src="Images/13.jpg"  width="100%"/>
+      <h3>Welcome to AGYADTECH</h3>
+<h4>We are honored to introduce our “ AGYADTECH for Elevators and Escalators projects" as a professional contractor with a proven successful experience record in this field. AGYADTECH office are well equipped with the latest advanced technology in computer system to provide support facilities to stuff ,including design ,load calculation ,AutoCAD ,projects manage- ments , start up through close monitoring of extensive quality control procedures, Tendering and reporting.</h4>
+<br />
+<br />
+<h3>Our Main objectives are</h3>
+<ul>
+<li>To provide our regular & new customers with the best quality services</li>
+<li>To invest and search for the highly qualified employees to serve the Customer better</li>
+<li>To build a good reputation by working very hard to meet the demands and satisfy cus- tomers.</li>
+<li>Our strategy is to provide our clients with after sales services and best possible support at very reasonable expenses</li>
+  </ul>
+ <div data-role="footer" data-position="fixed" data-theme="a">
+  <h6 style="text-align:center;">All Right Reserved @2016</h6>
+  </div>
+</div>
+
+</div>
+
+
+
+
+<!-- Login -->
+
+<div data-role="page" id="loginpage" data-theme="a">
+ <div data-role="header" data-position="fixed" data-theme="a">
+     <a href="javascript:home()" data-rel="popup" class="ui-btn ui-btn-left  ui-icon-grid ui-btn-icon-left ui-btn-icon-notext" ></a>
+        <h2> AGYADTECH </h2>
+  </div>
+  <div data-role="content" class="ui-content">
+    <h2 style ="text-align:center ;">Login</h2>
+    <div class="ui-field-contain" >
+  <input type="text" name="id" id="id" placeholder="User id">
+  <input type="password" name="pass" id="pass" placeholder="User password">
+  </div>
+  <a href="javascript:login()"  class="ui-btn ui-corner-all"  >Login</a>
+ 
+  <div data-role="footer" data-position="fixed" data-theme="a">
+  <h6 style="text-align:center;">All Right Reserved @2016</h6>
+  </div>
+</div>
+
+</div>
+
+
+<!-- project -->
+
+<div data-role="page" id="projectpage" data-theme="a">
+ <div data-role="header" data-position="fixed" data-theme="a">
+     <a href="javascript:home()" data-rel="popup" class="ui-btn ui-btn-left  ui-icon-grid ui-btn-icon-left ui-btn-icon-notext" ></a>
+        <h2> AGYADTECH </h2>
+  </div>
+  <div data-role="content" class="ui-content">
+    <h2 style ="text-align:center ;">Company Project</h2>
+      <form class="ui-filterable" style="text-align:right">
+      <input  id="tbf" data-type="search" class="ui-alt-icon"  placeholder="Please input search text ... " >
+    </form>
+    <ul data-role="listview" id="ldata" data-filter="true" style="margin:10px"  data-input="#tbf" data-autodividers="false" data-inset="false"> 
+    <li>
+       <h4>12040003</h4>
+       <h4>Rashid al-Tamimi Est.	Supply & Installation Malaysia</h4>
+       <h4>	Commercial	Dammam </h4>
+   </li>
+   <li>
+       <h4>12040003</h4>
+       <h4>Ibrahim Mohamed Al Mana Bros. Co.	Supply & Installation	Japan</h4>
+       <h4>	Hospital	Jubail </h4>
+   </li>
+   <li>
+       <h4>12040006</h4>
+       <h4>Ibrahim Mohamed Al Mana Bros. Co.	Supply & Installation	Malaysia</h4>
+       <h4>	Hospital	Al-Ahsa </h4>
+   </li>
+   <li>
+       <h4>12040010</h4>
+       <h4>Al-Madarat Trading Company	Supply & Installation	Malaysia</h4>
+       <h4>	Residential	Al-Khobar </h4>
+   </li>
+   <li>
+       <h4>12040012</h4>
+       <h4>Abdullah Zafer Al-Qahtani project	Supply & Installation Italy</h4>
+       <h4>	Villa	Dammam </h4>
+   </li>
+   <li>
+       <h4>12040013</h4>
+       <h4>Al-Anhr General Contracting Est.	Supply & Installation Italy</h4>
+       <h4>	Villa	Al-Hzam </h4>
+   </li>
+   <li>
+       <h4>12040014</h4>
+       <h4>Abdullah Al-Ghamdi project	Supply & Installation	Italy</h4>
+       <h4>Residential	Al-Ahsa </h4>
+   </li>
+   <li>
+       <h4>12040015</h4>
+       <h4>Rashid al-Tamimi Est.	Supply & Installation Malaysia</h4>
+       <h4>	Villa	Dammam </h4>
+   </li>
+   <li>
+       <h4>12040016</h4>
+       <h4>Al-Anhr General Contracting Est.	Supply & Installation Italy</h4>
+       <h4>	Residential	Dammam </h4>
+   </li>
+   <li>
+       <h4>12040017</h4>
+       <h4>Al-Wafa Compound	Supply & Installation Malaysia</h4>
+       <h4>	Compound	Al-Rakah </h4>
+   </li>
+
+    </ul>
+  <div data-role="footer" data-position="fixed" data-theme="a">
+  <h6 style="text-align:center;">All Right Reserved @2016</h6>
+  </div>
+</div>
+
+</div>
+	
+</body>
+</html>
